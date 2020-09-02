@@ -1,3 +1,19 @@
-﻿<div>
-    <h1>MyView Welcome!</h1>
-</div>
+﻿@* типизация представления *@
+@model string
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width' />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @* в стандартном свойстве Model - ссылка на объект модели, который был передан представлению
+        в качестве второго параметра метода View *@
+        @Model World (from the view)
+    </div>
+</body>
+</html>
